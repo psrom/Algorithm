@@ -1,4 +1,5 @@
-# :pencil: 백준/ Programmers
+# Algorithm Study
+### :pencil: 백준, Programmers, SWEA, 창의적 알고리즘(중급)
 - Binary Search
 - Brute Force
 - DFS, BFS
@@ -12,6 +13,5 @@
 - Stack/ Queue
 - Samsung Coding Test
 
-# :pencil: SWEA
-# :pencil: 창의적 알고리즘(중급)
 # :pencil: etc
+- Basic Algorithm Notes & Questions

@@ -1,13 +1,18 @@
-def solution(s):
-    s = s.split(" ")
-    lst = list(s)
+# 요세푸스 문제: https://www.acmicpc.net/problem/1158
+from collections import deque
+n, k = map(int, input().split())
 
-    for a in range(len(lst)):
-        if (type(lst[a][0])) != str:
-            lst[a] = lst[a][0] + lst[a][1:].lower()
-        else:
-            lst[a] = lst[a][0].upper() + lst[a][1:].lower()
+dq = deque([i for i in range(1, n+1)])
+result = []
 
-    answer = " ".join(lst)
-    return "\""+answer+"\""
-solution("for the last week")
+while dq:
+    for i in range(k-1):
+        rest = dq.popleft()
+        dq.append(rest)
+    r = dq.popleft()
+    result.append(r)
+
+print("<", end="")
+for i in range(len(result)-1):
+    print(result[i], end=", ")
+print(str(result[-1])+">")
